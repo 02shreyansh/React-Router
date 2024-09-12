@@ -1,13 +1,11 @@
-import Footer from "./Components/Footer/Footer"
-import Header from "./Components/Header/Header"
-import Home from "./Components/Home/Home"
-
+import { Outlet } from "react-router-dom"
+import {Header,Footer} from './Components/Render/Render'
 function App() {
   
   return (
     <>
       <Header/>
-      <Home/>
+      <Outlet/>
       <Footer/>
     </>
   )
