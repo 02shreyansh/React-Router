@@ -28,7 +28,7 @@ import Github, { githubINfoLoader } from './Components/Github/Github.jsx'
 //     ]
 //   }
 // ])
-const router =HashRouter(
+const router =createHashRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
       <Route path='' element={<Home/>}/>
